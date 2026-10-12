@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Linghui Shen">
+  <meta name="description" content="Linghui Shen — undergraduate researcher at The Hong Kong Polytechnic University. Generative models, visual reasoning, world models, and trustworthy AI.">
+  <title>Linghui Shen</title>
+  <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="publications.js" defer></script>
+  <script src="analytics.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#research">Skip to research</a>
+  <main>
+    <header class="intro" id="about">
+      <div class="bio">
+        <h1>Linghui Shen</h1>
+        <p>Hi there👋! I am Linghui Shen (沈凌卉), a fourth-year undergraduate student in Computer Science at <a href="https://www.polyu.edu.hk/">The Hong Kong Polytechnic University</a>, with a minor in<br>Applied Mathematics. I also spent a wonderful semester at <a href="https://www.kth.se/en">KTH Royal Institute of Technology</a> in Sweden as an exchange student.</p>
+        <p>I am fortunate to be supervised by <a href="https://adamdad.github.io/">Xingyi Yang</a> at PolyU.</p>
+        <p>I am grateful for the experience of working with <a href="https://muhaochen.github.io/">Muhao Chen</a> at UC Davis.</p>
+        <nav class="contact-links" aria-label="Contact and profiles">
+          <a href="mailto:ling-hui.shen@connect.polyu.hk">Email</a><span aria-hidden="true">/</span>
+          <a href="https://drive.google.com/drive/folders/1KJiK0sLFiGvGoFL4MiTvbvBTpUjcQDSR" target="_blank" rel="noopener noreferrer">CV</a><span aria-hidden="true">/</span>
+          <a href="https://scholar.google.com/citations?user=rbJSgZoAAAAJ&amp;hl=en">Google Scholar</a><span aria-hidden="true">/</span>
+          <a href="https://github.com/LinghuiiShen">GitHub</a><span aria-hidden="true">/</span>
+          <a href="https://x.com/shen79104143">X</a>
+        </nav>
+      </div>
+      <div class="portrait-link">
+        <img class="portrait" src="assets/images/portrait.jpg" width="1197" height="1197" alt="Linghui Shen by a lakeside" fetchpriority="high">
+      </div>
+    </header>
+
+    <section id="news" aria-labelledby="news-heading">
+      <h2 id="news-heading">News</h2>
+      <ul class="news-list">
+        <li><time datetime="2026-06">06.2026</time><span>Start a summer internship with <a href="https://muhaochen.github.io/">Muhao Chen</a> at <a href="https://www.ucdavis.edu/">UC Davis</a>.</span></li>
+        <li><time datetime="2026-01">01.2026</time><span>Start my exchange semester at <a href="https://www.kth.se/en">KTH</a> in Stockholm, Sweden.</span></li>
+      </ul>
+    </section>
+
+    <section id="research" aria-labelledby="research-heading">
+      <h2 id="research-heading">Research Interest</h2>
+      <p class="research-statement">My research focuses on <strong>generative models</strong> that learn predictive representations of the physical world. I aim to advance <strong>visual intelligence</strong> by enabling these models to anticipate, reason about, and simulate dynamic environments reliably and efficiently. I am extending my research toward representation learning and embodied AI.</p>
+      <div class="section-caption">
+        <h2>Publications</h2>
+        <span class="pub-filters" hidden>(<button type="button" data-filter="selected" aria-pressed="true">show selected</button> / <button type="button" data-filter="all" aria-pressed="false">show all</button>)</span>
+        <a class="scholar-link" href="https://scholar.google.com/citations?user=rbJSgZoAAAAJ&amp;hl=en">Google Scholar ↗</a>
+      </div>
+
+      <!-- Publication order is intentional: ProAR, BadWorld, SAE, DeContext, LeFCert. -->
+      <article class="publication" id="proar">
+        <a class="paper-image" href="assets/images/proar.png" aria-label="View full ProAR cover">
+          <img src="assets/images/proar.png" width="1672" height="941" alt="ProAR: shape sorting, FlowFree, maze reasoning, and robotic manipulation">
+        </a>
+        <div class="paper-content">
+          <h3><a href="https://arxiv.org/abs/2610.03664">ProAR: Learning Prospective Reasoning with Autoregressive Video Models</a></h3>
+          <p class="authors"><strong>Linghui Shen</strong>, Tinghui Zhu, Sheng Zhang, Muhao Chen</p>
+          <p class="paper-links"><a href="https://arxiv.org/abs/2610.03664">arXiv</a><span>/</span><a href="https://luka-group.github.io/ProAR/">Project page</a><span>/</span><a href="https://github.com/luka-group/ProAR">Code</a></p>
+          <p class="summary">Turning reactive autoregressive video generation into a prospective reasoning process through goal-frame anchoring and future representation self-alignment.</p>
+        </div>
+      </article>
+
+      <article class="publication" id="badworld">
+        <a class="paper-image" href="assets/images/badworld.gif" aria-label="View full BadWorld animation">
+          <picture>
+            <source media="(prefers-reduced-motion: reduce)" srcset="assets/images/badworld-poster.jpg">
+            <img src="assets/images/badworld.gif" width="1226" height="682" alt="BadWorld animated comparison of clean and adversarial world-model rollouts" loading="lazy">
+          </picture>
+        </a>
+        <div class="paper-content">
+          <h3><a href="https://arxiv.org/abs/2606.16519">BadWorld: Adversarial Attacks on World Models</a></h3>
+          <p class="authors"><strong>Linghui Shen</strong>, Mingyue Cui, Xingyi Yang</p>
+          <p class="paper-links"><a href="https://arxiv.org/abs/2606.16519">arXiv</a><span>/</span><a href="https://linghuiishen.github.io/BadWorld/">Project page</a><span>/</span><a href="https://github.com/LinghuiiShen/BadWorld">Code</a></p>
+          <p class="summary">Combining velocity attacks and trajectory-adaptive optimization to craft imperceptible image perturbations that disrupt interactive world-model rollouts across unseen controls, without ground-truth future videos.</p>
+        </div>
+      </article>
+
+      <article class="publication" id="sae" hidden>
+        <a class="paper-image" href="assets/images/sae.png" aria-label="View full SAE recovery framework">
+          <img src="assets/images/sae.png" width="2008" height="994" alt="SAE framework showing defense, orthogonal recovery, and recovered behavior" loading="lazy">
+        </a>
+        <div class="paper-content">
+          <h3><a href="https://arxiv.org/abs/2606.18322">SAE Interventions are Unreliable: Post-Intervention Recovery of Suppressed Behavior</a></h3>
+          <p class="authors">Mingyue Cui, <strong>Linghui Shen</strong>, Xingyi Yang</p>
+          <p class="paper-links"><a href="https://arxiv.org/abs/2606.18322">arXiv</a><span>/</span><a href="https://mingyuee88.github.io/sae-post-intervention-recovery/">Project page</a><span>/</span><a href="https://github.com/Mingyuee88/sae-post-intervention-recovery">Code</a></p>
+          <p class="summary">Suppressed model behavior can recover while targeted SAE features remain clamped, exposing a gap between feature control and behavioral safety.</p>
+        </div>
+      </article>
+
+      <article class="publication" id="decontext">
+        <a class="paper-image" href="assets/images/decontext.png" aria-label="View full DeContext comparison">
+          <img src="assets/images/decontext.png" width="1427" height="560" alt="DeContext comparison: clean images preserve identity through editing; protected images disrupt identity transfer" loading="lazy">
+        </a>
+        <div class="paper-content">
+          <h3><a href="https://arxiv.org/abs/2512.16625">DeContext as Defense: Safe Image Editing in Diffusion Transformers</a></h3>
+          <p class="authors"><strong>Linghui Shen</strong>, Mingyue Cui, Xingyi Yang</p>
+          <p class="paper-links"><a href="https://arxiv.org/abs/2512.16625">arXiv</a><span>/</span><a href="https://linghuiishen.github.io/decontext_project_page/">Project page</a><span>/</span><a href="https://github.com/LinghuiiShen/DeContext">Code</a></p>
+          <p class="summary">The first defense framework against unauthorized DiT-based in-context image editing, using imperceptible perturbations to disrupt cross-attention while preserving visual quality.</p>
+        </div>
+      </article>
+
+      <article class="publication" id="lefcert" hidden>
+        <a class="paper-image" href="assets/images/lefcert.png" aria-label="View full LeFCert framework">
+          <img src="assets/images/lefcert.png" width="2404" height="818" alt="LeFCert illustration of clean classification, support-set poisoning, and certified defense" loading="lazy">
+        </a>
+        <div class="paper-content">
+          <h3><a href="https://arxiv.org/abs/2510.08659">Provably Robust Adaptation for Language-Empowered Foundation Models</a></h3>
+          <p class="authors">Yuni Lai, Xiaoyu Xue, <strong>Linghui Shen</strong>, Yulun Wu, Gaolei Li, Song Guo, Kai Zhou, Bin Xiao</p>
+          <p class="paper-links"><a href="https://arxiv.org/abs/2510.08659">arXiv</a></p>
+          <p class="summary">Certifying few-shot classifiers built on language-empowered foundation models against support-set poisoning attacks.</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Experience</h2>
+      <div class="experience-row">
+        <a class="experience-logo ucdavis-logo" href="https://www.ucdavis.edu/" aria-label="UC Davis"><img src="assets/images/ucdavis-wordmark.svg" alt="" width="327" height="84"></a>
+        <div class="experience-content">
+          <div class="entry-heading"><h3>University of California, Davis · LUKA Lab</h3><span class="date">06.2026 – 09.2026</span></div>
+          <p>Summer Research Intern <span class="muted">(Remote)</span></p>
+          <p class="detail">Supervised by <a href="https://muhaochen.github.io/">Muhao Chen</a> and <a href="https://darthzhu.github.io/">Tinghui Zhu</a>; collaborated with <a href="https://sheng-z.github.io/">Sheng Zhang</a>.</p>
+        </div>
+      </div>
+      <div class="experience-row">
+        <a class="experience-logo" href="https://www.kth.se/en" aria-label="KTH"><img src="assets/images/kth.png" alt="" width="180" height="180"></a>
+        <div class="experience-content">
+          <div class="entry-heading"><h3>KTH Royal Institute of Technology</h3><span class="date">01.2026 – 06.2026</span></div>
+          <p>Exchange Student · Department of Computer Science</p>
+        </div>
+      </div>
+      <div class="experience-row polyu-experiences">
+        <a class="experience-logo" href="https://www.polyu.edu.hk/" aria-label="The Hong Kong Polytechnic University"><img src="assets/images/polyu.ico" alt="" width="64" height="64"></a>
+        <div class="experience-content">
+          <div class="experience-entry">
+            <div class="entry-heading"><h3>The Hong Kong Polytechnic University · LG Lab</h3><span class="date">07.2025 – Present</span></div>
+            <p>Undergraduate Researcher</p>
+            <p class="detail">Supervised by <a href="https://adamdad.github.io/">Xingyi Yang</a>.</p>
+          </div>
+          <div class="experience-entry">
+            <div class="entry-heading"><h3>The Hong Kong Polytechnic University · STiL Group</h3><span class="date">02.2025 – 08.2025</span></div>
+            <p>Undergraduate Researcher</p>
+            <p class="detail">Supervised by <a href="https://www4.comp.polyu.edu.hk/~kaizhou/">Kai Zhou</a> and <a href="https://scholar.google.com/citations?user=sN1GVRMAAAAJ&amp;hl=en">Yuni Lai</a>.</p>
+          </div>
+        </div>
+      </div>
+      <div class="experience-row">
+        <a class="experience-logo" href="https://www.chinaunicom.cn/" aria-label="China Unicom"><img src="assets/images/china-unicom.svg" alt="" width="80" height="60"></a>
+        <div class="experience-content">
+          <div class="entry-heading"><h3>China Unicom</h3><span class="date">06.2024 – 08.2024</span></div>
+          <p>Technical Product Marketing</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <div class="experience">
+        <div class="entry-heading"><h3>The Hong Kong Polytechnic University</h3><span class="date">09.2023 – 06.2027 <span class="muted">(expected)</span></span></div>
+        <div class="education-detail"><p>BSc in Computer Science · Minor in Applied Mathematics</p><p class="education-gpa">GPA: 3.81/4.30</p></div>
+      </div>
+      <div class="experience">
+        <div class="entry-heading"><h3>KTH Royal Institute of Technology</h3><span class="date">01.2026 – 06.2026</span></div>
+        <div class="education-detail"><p>Exchange Student · Department of Computer Science</p><p class="education-gpa">GPA: 5.0/5.0</p></div>
+      </div>
+    </section>
+
+    <section id="honors" aria-labelledby="honors-heading">
+      <h2 id="honors-heading">Selected Honors &amp; Awards</h2>
+      <div class="entry-heading"><p><strong>Dean’s Honours List</strong><br><span class="detail">Faculty of Engineering, The Hong Kong Polytechnic University</span></p><span class="date">09.2025</span></div>
+    </section>
+    <section id="misc" aria-labelledby="misc-heading">
+      <details class="misc-details">
+        <summary id="misc-heading">Miscs</summary>
+        <div class="misc-quote">
+          <p><a href="https://poets.org/poem/o-me-o-life" target="_blank" rel="noopener noreferrer"><em>“That the powerful play goes on, and you may contribute a verse.”</em></a> <span class="quote-author">— Walt Whitman</span></p>
+          <svg class="quote-feather" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <path d="M9 23C6 18 8 11 14 7c4-3 9-4 14-4-1 5-2 10-5 14-4 6-9 8-14 6Z" fill="#d9edf8" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+            <path d="m4 29 21-22M9 23l1-8m4 4 8-1m-4-3 1-7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            <path d="m4 29 2-6 3 3Z" fill="currentColor"/>
+          </svg>
+        </div>
+      </details>
+    </section>
+
+    <footer><span>Last updated: October 11, 2026</span><span>Template adapted from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron</a>.</span></footer>
+  </main>
+</body>
+</html>
